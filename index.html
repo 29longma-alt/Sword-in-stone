@@ -16,7 +16,20 @@
         scale="12 12 12"
         color="yellow"
         gps-entity-place="latitude:39.279343600141864; longitude: -84.27582231515213;"
-        <a-entity gltf-model="#Sword.glb" gps-entity-place="latitude: 00.00000; longitude: 00.00000;"></a-entity>
+      ></a-text>
+      <!-- Load the Blender file -->
+		<a-assets>
+			<a-asset-item id="myModel" src="extrusion.glb"></a-asset-item>
+		</a-assets>
+		
+		<!-- Display as AR element -->
+<a-entity gltf-model="#Sword.glb" gps-entity-place="latitude: 39.279791734356856; longitude: -84.27576773341642;"></a-entity>
+      
+      <a-text
+        value="Welcome to VR!"
+        scale="12 12 12"
+        color="red"
+        gps-entity-place="latitude:39.27928235418462; longitude: -84.27583085879861;"
       ></a-text>
     </a-scene>
   </body>
